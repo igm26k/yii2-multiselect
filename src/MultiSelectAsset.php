@@ -1,6 +1,6 @@
 <?php
 
-namespace flywi\select;
+namespace igm26k\select;
 
 use yii\web\AssetBundle;
 

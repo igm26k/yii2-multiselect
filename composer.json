@@ -1,5 +1,5 @@
 {
-    "name": "flywi/yii2-multiselect",
+    "name": "igm26k/yii2-multiselect",
     "description": "yii2 widget for two sides select",
     "type": "library",
     "license": "MIT",
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "flywi\\select\\": "src"
+            "igm26k\\select\\": "src"
         }
     }
 }

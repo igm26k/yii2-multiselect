@@ -1,18 +1,21 @@
-# yii2-multiselect
-![example](https://github.com/Flywi/yii2-multiselect/blob/master/example.png)
-## 安装
+# igm26k/yii2-multiselect
 
-推荐使用
+Это форк [Flywi/yii2-multiselect](https://github.com/Flywi/yii2-multiselect) с внесенными исправлениями.
+В этой версии корректно подгружаются значения из модели в правую часть.
+
+![example](https://github.com/igm26k/yii2-multiselect/blob/master/example.png)
+
+## Установка
 
 ```
-$ php composer.phar require flywi/yii2-multiselect
+$ php composer.phar require igm26k/yii2-multiselect
 ```
 
-## 使用
-在`ActiveForm`中使用:
+## Использование
+`ActiveForm`:
 ```php
 ...
-echo $form->field($model, 'attributeId')->widget(\flywi\select\MultiSelectWidget::class, [
+echo $form->field($model, 'attributeId')->widget(\igm26k\select\MultiSelectWidget::class, [
     'data' => [
       // select options list(key => value)
     ],
@@ -22,5 +25,5 @@ echo $form->field($model, 'attributeId')->widget(\flywi\select\MultiSelectWidget
 ]);
 ...
 ```
-## 其他
-clientOptions [ 配置参考 ](https://github.com/crlcu/multiselect)
+## Client options
+clientOptions [crlcu/multiselect](https://github.com/crlcu/multiselect)

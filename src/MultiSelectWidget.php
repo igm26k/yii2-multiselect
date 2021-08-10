@@ -1,6 +1,6 @@
 <?php
 
-namespace flywi\select;
+namespace igm26k\select;
 
 use yii\helpers\Html;
 use yii\helpers\Json;
@@ -8,7 +8,7 @@ use yii\widgets\InputWidget;
 
 /**
  * Class MultiSelectWidget
- * @package flywi\select
+ * @package igm26k\select
  */
 class MultiSelectWidget extends InputWidget
 {
@@ -120,7 +120,7 @@ class MultiSelectWidget extends InputWidget
         $options = array_merge(['id' => $rightSelectID, 'name' => "{$name}[]"], $this->defaultSelectBoxOptions, $this->rightSelectBoxOptions);
         $selectContent = Html::tag(
             'select',
-            '',
+            Html::renderSelectOptions(null, $this->model[$this->attribute]),
             $options
         );
         return $selectContent;
